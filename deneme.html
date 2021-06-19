@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formlar</title>
+
+
+</head>
+
+
+<body>
+
+    <!-- buradaki result. html backend kısmıyla alakalı kısım. get post-->
+
+    <form action="result.html" method="GET">
+
+        <div>
+
+            <!--input type text-->
+            <h1>input type text</h1> <br>
+
+
+            <label for="isim"><b> ad:</b></label>
+            <input id="isim" type="text" name="isim"><br>
+
+
+            <label for="soyisim"><b>soy ad:</b></label>
+            <input id="soyisim" type="text" name="soyisim">
+            <br>
+            <br>
+
+            <div>
+                <!--input type pasword-->
+                <h1>input type pasword</h1> <br>
+
+
+                <label for="şifre">paralo:</label>
+                <input type="password" name="paralo" id="şifre">
+
+            </div><br>
+
+            <div>
+                <!--radio buttom coktan bir seçmek için-->
+                <h1>radio button kısmı</h1> <br><br>
+                <label for="">cinsiyet</label>
+
+                <input type="radio" name="gender" id="gender1" value="erkek">
+
+                <label for="gender1">erkek</label>
+
+                <input type="radio" name="gender" id="gender2" value="kadın">
+
+                <label for="gender2">kadın</label>
+
+            </div>
+
+            <br>
+
+
+            <div>
+                <!--input type checkbox ; birden fazla seçim yapabilme imkanı sağsağlar-->
+
+                <h1>input checkbox kısmı</h1><br><br>
+
+                <label>Favori Hayvanlarınızı Belirtiniz</label>
+                <br>
+
+                <input type="checkbox" name="animal1" id="panda" value="Panda">
+                <label for="panda">Panda</label>
+
+                <input type="checkbox" name="animal2" id="balık" value="balık">
+                <label for="balık">Balık</label>
+
+                <input type="checkbox" name="animal3" id="at" value="at">
+                <label for="at">At</label>
+                
+            </div>
+
+            
+            <h1>place holder<!--placeholder inputların içinde gördüğümüz silik açıklama yazıları--> </h1>
+
+            <div>
+                <!--placeholder inputların içinde gördüğümüz silik açıklama yazıları-->
+
+                <label for="adı"> <b>ad</b> </label>
+                <input type="text" name="ismi" id="adı" placeholder="lütfen adınızı giriniz">
+                <br>
+
+
+                <label for="idleaynıolmalı"><b>aşağıdaki formu dordurunuz</b></label><br>
+                <input type="text" name="burasıbackhandtarafı" id="idleaynıolmalı" placeholder="formu doldurmayı unutmayalım">
+            </div>
+
+            <h1>input checkboxta bazı kısımların işaretlenmiş olarak gelmesini istersek checkedlememiz gerekir atı checkedledim.</h1><br>
+
+            <div><label>Favori Hayvanlarınızı Belirtiniz</label>
+                <br>
+
+                <input type="checkbox" name="animal1" id="panda" value="Panda">
+                <label for="panda">Panda</label>
+
+                <input type="checkbox" name="animal2" id="balık" value="balık">
+                <label for="balık">Balık</label>
+
+                <input type="checkbox" name="animal3" id="at" value="at" checked>
+                <label for="at">At</label>
+
+            </div>
+            <h1>input type number kullanıcıdan sayı almak için kullanılıyor örnek aşağıda</h1><br>
+
+            <p>step kaçar kaçar artırsın diye kullanılır ben burada beş yapacağım </p><br>
+
+            <p>min ve max ekleyebiliriz girmesini istediğimiz sayıyı yazabiliriz.</p><br>
+            <br>
+             
+            <div>
+                <label for="yaş"><b>Age:</b>
+                     </label>
+                <input type="number" name="yaşı" id="yaş" placeholder="yaşınızı giriniz" step="5" min="18"  max="45">
+                
+            </div>
+            <div>
+                <h1>bir reset düğmesi ekleyebiliriz valuenin defaultu kullandığınız tarayıcıyla alakalı değiştirebilirsin..</h1>
+
+                <input type="reset" value="resetleme düğmesi"><br><br>
+
+                <input type="reset" value="reset">
+            </div>
+
+            <div>
+                <h1>input type search</h1>
+                <label for="arama"> <b>ara:</b></label>
+                <input type="search" name="arandı" id="arama" placeholder="aramak istediğiniz şeyi yazın">
+
+            </div>
+            <div>
+                <h1>input type color çalişalım</h1>
+
+                <label for="color">bir renk seçermisin:</label>
+
+                <input type="color" name="seçilen renk" id="color">
+            </div>
+            <div>
+
+                <h1>gelelim input type date eeee</h1>
+                <label for="tarih"><b>bir tarih seçiniz:</b></label>
+
+                <input type="date" name="seçilen tarih" id="tarih" min="2020-05-20" max="2022-06-25" value="2020-10-02"> <!--min ve max girilebilir  .value değeri girersen ekranda o çıkıyor.-->            
+            </div>
+
+            <div>
+                <h1>haydi sıra mail adresi istemede:</h1>
+
+                <label for="mail"><b>mail:</b></label>
+                <input type="email" name="mail adresi:" id="mail" placeholder="mail adresini giriniz:">
+
+            </div>
+            <div>
+                <h1>karşı tarafa bir dosya göndermesini istersek bunu: input type file ile yapacağız</h1>
+
+                <label for="dosya">göndermek istediğiniz dosya</label>
+                <input type="file" name="gönderilen dosya:" id="dosya">
+
+            </div><br><br>
+            <div>
+
+                <h1>şimdide kullanıcıdan telefon numaarası isteyelim neyile tabiki input type:file ile</h1>
+
+                <label for="tel"><b>enter your phone number:</b> </label>
+
+               <input type="tel" name="telefon numrası" id="tel" placeholder="(---)---_--_--" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}">
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+            
+            
+            <br><br>
+            <input type="submit"><br>
+            <br>
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
